@@ -1,0 +1,69 @@
+/*
+ Theme Name:   Goodnews Child
+ Description:  Goodnews Child Theme
+ Author:       Messive
+ Template:     goodnews
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  goodnews5-child
+*/
+.side-fixed {
+	top:0px !important;
+	position:fixed;
+	bottom:0px !important;
+}
+.sidebar .widget {
+	padding-bottom:0px;
+}
+.side-fixed .widget.rpwe_widget.recent-posts-extended {
+	position:relative;
+}
+.mom-post-meta.bp-meta, .mom_breadcrumb.breadcrumb.breadcrumbs, #footer {
+	display: none !important;
+}
+.sidebar .widget ul:not(.w-icon) li:before {
+content:none;
+}
+.p-single .entry-content h1, .p-single .entry-content h2, .p-single .entry-content h3, .p-single .entry-content h4, .p-single .entry-content h5, .p-single .entry-content h6 {
+	font-weight: 500;
+}
+.header .logo {
+	float:none;
+	text-align:center;
+}
+span.authorimage img {
+	border-radius: 50%;
+	width: 50px;
+}
+.mom-post-meta > span, .mom-post-meta > a {
+	float: none;
+	vertical-align: middle;
+	display: inline-block;
+}
+#review.wp-review-box-with-backlink {
+	margin-bottom: 10px;
+}
+span.wp-review-plugin-backlink {
+	display: none;
+}
+.widget.rpwe_widget.recent-posts-extended {
+	position: inherit;
+}
+.nav-shaddow {
+	height:0px;
+}
+p.sponsored {
+	margin-bottom: 0px;
+	text-align: center;
+}
+ @media only screen and (max-width: 1000px) and (min-width: 0px) {
+ .side-fixed {
+ position: inherit !important;
+ margin-left: 0px !important;
+}
+.side-fixed .widget.rpwe_widget.recent-posts-extended {
+position: inherit !important;
+}
+}
